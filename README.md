@@ -1,0 +1,1 @@
+A simple emotion game using the Microsoft Emotion API. You need OpenCV3 installed to run.

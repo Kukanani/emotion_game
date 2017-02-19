@@ -8,7 +8,14 @@ import operator
 import math
 import random
 
-api_key = "***REMOVED***1"
+api_key = None
+with open("api.txt") as file:
+    api_key = file.read()
+
+if api_key is None:
+    print("error, api.txt not found")
+    exit()
+
 emotions = {
     "neutral": "neutral",
     "happiness": "happy",
